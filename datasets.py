@@ -21,9 +21,4 @@ class VideoDataset(Dataset):
                              self.dataframe.iloc[index].path)
         video = self.transform(video)
 
-        if label == 0 or label == 1:
-            label = 0
-        else:
-            label = 1
-
         return video, label
