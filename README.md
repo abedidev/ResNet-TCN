@@ -20,7 +20,7 @@ In this work, we formulate user engagement detection as a spatio-temporal video 
 
 ## Code Usage:
 
-The input is training and validation raw frames extracted from videos and placed in separate folders. The address of the folders (containing video frames) and corresponding labels should be provided in two csv files, train.csv and test.csv as follows
+The input is training and validation raw frames extracted from videos and placed in separate folders. The address of the folders (containing video frames) and corresponding labels should be provided in two csv files, train.csv and validation.csv as follows
  
 ```python
 path,label
@@ -30,6 +30,5 @@ path,label
 /cluster/videos/train/882654/88265401300,3
 ...
 ```
-
 
 datasets.py and transforms.py read the video frames based on their address in the csv files, preprocess and normalize them, and convert them to PyTorch dataloaders.
