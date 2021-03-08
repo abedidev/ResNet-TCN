@@ -33,7 +33,7 @@ The ResNet-TCN Hybrid Architecture is in `ResTCN.py`. In the class `ResTCN` and 
 
 Training and validation phases are performed in `train.py`. Training the ResNet and TCN is performed jointly using [Adam](https://pytorch.org/docs/stable/optim.html) optimization algorithm.
 
-The code has been tested on the [DAiSEE](https://iith.ac.in/~daisee-dataset/), Dataset for Affective States in E-Environments for engagement level classification in online classrooms.
+The code has been tested on the [DAiSEE](https://iith.ac.in/~daisee-dataset/), Dataset for Affective States in E-Environments, for engagement level classification in online classrooms.
 
 
 
