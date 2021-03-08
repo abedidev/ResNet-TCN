@@ -7,12 +7,12 @@ In this work, video classification/regression is formulated as a spatio-temporal
 
 ## Requirments
 * Python3
-* PyTorch
-* Torchvision
-* OpenCV
-* scikit-learn
-* pandas
-* numpy
+* torch=1.7.1
+* torchvision=0.8.2
+* cv2=4.5.1
+* sklearn=0.23.2
+* pandas=1.2.1
+* numpy=1.20.1
 
 
 ## Code Description:
