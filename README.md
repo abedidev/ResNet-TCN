@@ -24,7 +24,6 @@ path,label
 /home/videos/train/826412/8264120240/,0
 /home/videos/train/510034/5100342024/,1
 /home/videos/train/500067/5000671065/,2
-/home/videos/train/882654/88265401300,3
 ...
 ```
 
