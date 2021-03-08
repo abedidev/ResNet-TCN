@@ -18,7 +18,7 @@ In this work, we formulate user engagement detection as a spatio-temporal video 
 
 
 
-## Code Usage:
+## Code Description:
 
 The input is training and validation raw frames extracted from videos and placed in separate folders. The address of the folders (containing video frames) and corresponding labels should be provided in two csv files, train.csv and validation.csv as follows
  
@@ -31,4 +31,6 @@ path,label
 ...
 ```
 
-datasets.py and transforms.py read the video frames based on their address in the csv files, preprocess and normalize them, and convert them to PyTorch dataloaders.
+'datasets.py' and transforms.py read the video frames based on their address in the csv files, preprocess and normalize them, and convert them to PyTorch dataloaders.
+
+The ResNet-TCN Hybrid Architecture is in ResTCN.py. In the class ResTCN and the function forward, [resnet18](https://pytorch.org/vision/0.8/models.html#torchvision.models.resnet18) extract features from consecutive frames of video, and [TCN](https://github.com/locuslab/TCN) anlayzes
