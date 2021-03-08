@@ -73,7 +73,7 @@ model = ResTCN().to(device)
 optimizer = optim.Adam(model.parameters(), lr=lr)
 scheduler = StepLR(optimizer, step_size=50, gamma=.1)
 
-criterion = nn.BCEWithLogitsLoss().to(device)
+criterion = nn.BCELoss().to(device)
 
 dataloader = {
     'train': get_dataloader_concat(batch_size,
