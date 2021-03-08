@@ -31,8 +31,8 @@ path,label
 
 `datasets.py` and `transforms.py` read the video frames based on their address in the csv files, preprocess and normalize them, and convert them to [PyTorch dataloaders](https://pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader).
 
-The ResNet-TCN Hybrid Architecture is in `ResTCN.py`. In the class `ResTCN` and the function `forward`, [resnet18](https://pytorch.org/vision/0.8/models.html#torchvision.models.resnet18) extract features from consecutive frames of video, and [TCN](https://github.com/locuslab/TCN) anlayzes changes in the extracted features, and fully-connected layers output the final prediction.
+The ResNet-TCN Hybrid Architecture is in `ResTCN.py`. In the class `ResTCN` and the function `forward`, [resnet18](https://pytorch.org/vision/0.8/models.html#torchvision.models.resnet18) extract features from consecutive frames of video, and [TCN](https://github.com/locuslab/TCN) analyzes changes in the extracted features, and fully-connected layers output the final prediction.
 
-Training and validation phases are performed in `train.py`. Training the ResNet and TCN is performred jointly using [Adam](https://pytorch.org/docs/stable/optim.html) optimzation algorithm.
+Training and validation phases are performed in `train.py`. Training the ResNet and TCN is performed jointly using [Adam](https://pytorch.org/docs/stable/optim.html) optimization algorithm.
 
 
