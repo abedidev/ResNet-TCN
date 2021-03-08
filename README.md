@@ -31,6 +31,6 @@ path,label
 ...
 ```
 
-'datasets.py' and transforms.py read the video frames based on their address in the csv files, preprocess and normalize them, and convert them to PyTorch dataloaders.
+`datasets.py` and `transforms.py` read the video frames based on their address in the csv files, preprocess and normalize them, and convert them to PyTorch dataloaders.
 
-The ResNet-TCN Hybrid Architecture is in ResTCN.py. In the class ResTCN and the function forward, [resnet18](https://pytorch.org/vision/0.8/models.html#torchvision.models.resnet18) extract features from consecutive frames of video, and [TCN](https://github.com/locuslab/TCN) anlayzes
+The ResNet-TCN Hybrid Architecture is in `ResTCN.py`. In the class `ResTCN` and the function `forward`, [resnet18](https://pytorch.org/vision/0.8/models.html#torchvision.models.resnet18) extract features from consecutive frames of video, and [TCN](https://github.com/locuslab/TCN) anlayzes changes in the extracted features, and fully-connected layers output the final prediction.
