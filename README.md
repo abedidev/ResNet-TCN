@@ -35,6 +35,16 @@ The ResNet-TCN Hybrid Architecture is in `ResTCN.py`. In the class `ResTCN` and 
 
 Training and validation phases are performed in `train.py`. Training the ResNet and TCN is performed jointly using [Adam](https://pytorch.org/docs/stable/optim.html) optimization algorithm.
 
+The input to ResTCN should have this format: inputs = torch.randn([batch_size, sequence_length, num_channels, frame_width, frame_height]). for instance
+
+```
+import torch
+from ResTCN import ResTCN
+model = ResTCN().cuda()
+inputs = torch.randn([16, 30, 3, 256, 256]).cuda()
+outputs = model(inputs)
+```
+
 The code has been tested on the [DAiSEE](https://iith.ac.in/~daisee-dataset/), Dataset for Affective States in E-Environments, for engagement level classification in online classrooms.
 
 
