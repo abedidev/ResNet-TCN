@@ -35,7 +35,7 @@ The ResNet-TCN Hybrid Architecture is in `ResTCN.py`. In the class `ResTCN` and 
 
 Training and validation phases are performed in `train.py`. Training the ResNet and TCN is performed jointly using [Adam](https://pytorch.org/docs/stable/optim.html) optimization algorithm.
 
-The input to ResTCN should have this format: inputs = torch.randn([batch_size, sequence_length, num_channels, frame_width, frame_height]). for instance
+The input to the ResTCN model should have this format: inputs = torch.randn([batch_size, sequence_length, num_channels, frame_width, frame_height]), for instance
 
 ```
 import torch
