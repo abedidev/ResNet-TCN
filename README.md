@@ -2,7 +2,7 @@
 
 PyTorch Implementation of ResNet-TCN Hybrid Architecture for End-to-End Video Classification/Regression
 
-*Citation Policy* - If you use this code, then please cite our corresponding [paper](https://arxiv.org/abs/2104.10122) as follows: "Improving state-of-the-art in Detecting Student Engagement with Resnet and TCN Hybrid Network", Ali Abedi, Shehroz S. Khan, The 34th Canadian Artificial Intelligence conference, 2021.
+*Citation Policy* - If you use this code, then please cite our corresponding [paper](https://arxiv.org/abs/2104.10122) as follows: "Improving state-of-the-art in Detecting Student Engagement with Resnet and TCN Hybrid Network", Ali Abedi, Shehroz S. Khan, The 18th Conference on Robots and Vision, 2021.
 
 In this work, video classification/regression is formulated as a spatio-temporal data analysis problem. A [2D ResNet](https://pytorch.org/vision/0.8/models.html#torchvision.models.resnet18) extracts spatial features from consecutive video frames, and a [TCN](https://github.com/locuslab/TCN) analyzes the temporal changes in video frames. The extracted feature vectors (by ResNet) from the consecutive frames are considered as the input to the consecutive time steps of the TCN. After the last time step of the TCN, fully-connected layers output the predicted classification labels or regression scores.
 
