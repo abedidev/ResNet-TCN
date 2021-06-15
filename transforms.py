@@ -24,9 +24,15 @@ class VideoFolderPathToTensor(object):
             torchvision.transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
             torchvision.transforms.Resize([224, 224])
         ])
-        EXTRACT_FREQUENCY = 18
+
+        # EXTRACT_FREQUENCY = 18
+        EXTRACT_FREQUENCY = 1
+
         # num_time_steps = int(num_frames / EXTRACT_FREQUENCY)
+
         num_time_steps = 16
+        # num_time_steps = 4
+
         # (3 x T x H x W), https://pytorch.org/docs/stable/torchvision/models.html
         frames = torch.FloatTensor(channels, num_time_steps, 224, 224)
 
